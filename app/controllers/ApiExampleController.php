@@ -11,5 +11,8 @@ class ApiExampleController {
 		$this->app = $app;
 	}
 
-	
+	function renderHome()
+	{
+		$this->app->render('index.php');
+	}
 }

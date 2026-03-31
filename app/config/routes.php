@@ -21,6 +21,6 @@ $router->group('', function(Router $router) use ($app) {
 		echo '<h1>Hello world! Oh hey '.$name.'!</h1>';
 	});
 
-	
+	$router->get('/page', [ ApiExampleController::class, 'renderHome' ]);
 	
 }, [ SecurityHeadersMiddleware::class ]);
